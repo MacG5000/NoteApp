@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NoteApp</string>
+    <string name="empty_list">Looks like it\'s time to take some notes!</string>
+    <string name="add_note">Add Note</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="title">Title:</string>
+    <string name="title_hint">Enter your title.</string>
+    <string name="description">Description:</string>
+    <string name="description_hint">Enter your note.</string>
+    <string name="image_url">Image Url:</string>
+    <string name="image_url_hint">Enter Image Url.</string>
+</resources>

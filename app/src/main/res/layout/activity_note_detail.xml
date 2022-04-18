@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.task.noteapp.feature.notes.detail.presentation.NoteDetailViewModel" />
+    </data>
+    <com.android.framework.ui.FWConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.android.framework.ui.FWCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            android:layout_marginTop="@dimen/margin_xxxlarge"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:elevation="8dp">
+
+            <com.android.framework.ui.FWConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.android.framework.ui.FWLabel
+                    style="@style/LabelStyle"
+                    android:id="@+id/lbl_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/title"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EditableStyle"
+                    android:hint="@string/title_hint"
+                    android:text="@={viewModel.titleObservable}"
+                    app:layout_constraintTop_toBottomOf="@id/lbl_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <com.android.framework.ui.FWLabel
+                    style="@style/LabelStyle"
+                    android:id="@+id/lbl_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/title_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/description"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/description_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EditableStyle"
+                    android:text="@={viewModel.descriptionObservable}"
+                    android:hint="@string/description_hint"
+                    app:layout_constraintTop_toBottomOf="@id/lbl_description"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <com.android.framework.ui.FWLabel
+                    style="@style/LabelStyle"
+                    android:id="@+id/lbl_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/description_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/image_url"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    style="@style/EditableStyle"
+                    android:id="@+id/lbl_image_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@={viewModel.imageUrlObservable}"
+                    app:layout_constraintTop_toBottomOf="@id/lbl_image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:hint="@string/image_url_hint"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            </com.android.framework.ui.FWConstraintLayout>
+        </com.android.framework.ui.FWCardView>
+
+        <com.android.framework.ui.FWButton
+            android:id="@+id/delete_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
+            android:background="@drawable/selector_button"
+            android:text="@string/delete"
+            android:layout_marginBottom="@dimen/margin_large"
+            app:layout_constraintBottom_toTopOf="@id/add_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <com.android.framework.ui.FWButton
+            android:id="@+id/add_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
+            android:background="@drawable/selector_button"
+            android:text="@string/save"
+            android:layout_marginBottom="@dimen/margin_large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </com.android.framework.ui.FWConstraintLayout>
+</layout>

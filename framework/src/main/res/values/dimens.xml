@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_text_size_small">10sp</dimen>
+    <dimen name="button_text_size_medium">20sp</dimen>
+    <dimen name="button_text_size_large">30sp</dimen>
+    <dimen name="detail_info_label_view_center_margin">8dp</dimen>
+    <dimen name="transaction_input_view_height">48dp</dimen>
+
+    <dimen name="empty_card_item_height">120dp</dimen>
+
+    //Margin
+    <dimen name="margin_none">0dp</dimen>
+    <dimen name="margin_xxsmall">2dp</dimen>
+    <dimen name="margin_xsmall">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_xlarge">20dp</dimen>
+    <dimen name="margin_xxlarge">32dp</dimen>
+    <dimen name="margin_xxxlarge">64dp</dimen>
+    <dimen name="margin_huge">45dp</dimen>
+    <dimen name="margin_xhuge">48dp</dimen>
+    <dimen name="margin_page">20dp</dimen>
+    <dimen name="margin_page_2x">40dp</dimen>
+
+    //Padding
+    <dimen name="padding_none">0dp</dimen>
+    <dimen name="padding_xxsmall">1dp</dimen>
+    <dimen name="padding_xsmall">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">12dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_xlarge">20dp</dimen>
+    <dimen name="padding_xxlarge">32dp</dimen>
+    <dimen name="padding_huge">45dp</dimen>
+    <dimen name="padding_xhuge">48dp</dimen>
+    <dimen name="padding_xxhuge">60dp</dimen>
+
+    //TextSize
+    <dimen name="text_size_title">18sp</dimen>
+    <dimen name="text_size_xxsmall">8sp</dimen>
+    <dimen name="text_size_xsmall">10sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_xlarge">20sp</dimen>
+    <dimen name="text_size_xxlarge">24sp</dimen>
+    <dimen name="text_size_xxxlarge">32sp</dimen>
+
+
+    <dimen name="bottom_sheet_title_text_size">18sp</dimen>
+    <dimen name="bottom_sheet_margin_large">24dp</dimen>
+    <dimen name="bottom_sheet_margin_medium">18dp</dimen>
+    <dimen name="bottom_sheet_corner_radius">8dp</dimen>
+
+    <dimen name="form_default_corner_radius">8dp</dimen>
+</resources>

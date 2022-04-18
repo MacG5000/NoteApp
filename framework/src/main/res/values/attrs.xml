@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  custom attribute for Theme -->
+    <attr name="fwToolbarStyle" format="reference" />
+    <attr name="fwToolbarTitleStyle" format="reference" />
+    <attr name="fwToolbarSubTitleStyle" format="reference" />
+
+    <!-- APP COLORS -->
+    <attr name="fwToolbarTitleColor" format="color" />
+    <attr name="fwToolbarBackground" format="color" />
+
+    <declare-styleable name="FWImageView">
+        <attr name="fwImageViewCircularBorderColor" format="color" />
+        <attr name="fwImageViewCircularBorderWidth" format="integer" />
+        <attr name="fwImageViewCircularBackgroundColor" format="color" />
+        <attr name="fwImageViewCircularText" format="string" />
+        <attr name="fwImageViewCircularTextSize" format="integer" />
+        <attr name="fwImageViewCircularTextColor" format="color" />
+        <attr name="fwImageViewIsCircular" format="boolean" />
+    </declare-styleable>
+
+</resources>

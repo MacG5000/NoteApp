@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FWToolbarStyle">
+        <item name="android:background">?attr/fwToolbarBackground</item>
+        <item name="layout_scrollFlags">scroll|enterAlways</item>
+    </style>
+
+    <style name="FWToolbarTitleStyle">
+        <item name="android:textColor">?attr/fwToolbarTitleColor</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+</resources>

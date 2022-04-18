@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MaterialDialogStyle" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ProgressDialogStyle" parent="MaterialDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustPan|stateAlwaysHidden</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="background">@drawable/selector_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/button_text_size_medium</item>
+        <item name="android:layout_marginLeft">@dimen/margin_xlarge</item>
+        <item name="android:layout_marginRight">@dimen/margin_xlarge</item>
+    </style>
+
+    <style name="LabelStyle">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:padding">@dimen/padding_medium</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="ListLabelTitleStyle">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="maxLines">1</item>
+    </style>
+
+    <style name="ListLabelDateStyle">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">italic</item>
+        <item name="maxLines">1</item>
+    </style>
+
+
+    <style name="ListLabelDescStyle">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+
+    </style>
+
+    <style name="EditableStyle">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:padding">@dimen/padding_medium</item>
+        <item name="android:textColorHint">@color/teal_200</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+</resources>
